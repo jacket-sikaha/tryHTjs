@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html, body {
+        padding: 0px;
+        margin: 0px;   
+        display: flex; 
+        height: 100vh; 
+    }            
+    .main {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    .show{
+        width: 50vw;
+        height: calc(100%-48px);
+        border-right: 1px solid black;
+        position: relative;
+    }
+    .table{
+        width: 48vw;
+        text-align: center;
+    }
+    
+    .table-bottom {
+        width: 100%;
+        height: 100%;
+        /* border: 22px solid rgb(0, 4, 255); */
+
+        position: relative;
+        /* border: 1px solid black; */
+    }
+
+    .table-bottom canvas{
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    .a{
+        width: 10rem;
+        position: relative;
+    }
+    .b{
+        background-color: aqua;
+        width: 0rem;
+        height: 1rem;
+        background-position: center;
+        position: absolute;
+    }
+</style>  
+<script src="ht.js"></script>
+</head>
+<body>
+    <div class="show"></div>
+    <div class="table">
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>percent</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><div class="b"></div><div class="a"></div></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><div class="b"></div><div class="a"></div></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><div class="b"></div><div class="a"></div></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><div class="b"></div><div class="a"></div></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-bottom">
+            <div ></div>
+        </div>
+    </div>
+    
+</body>
+<script src="texture.js"></script> 
+<script src="index.js"></script> 
+</html>
